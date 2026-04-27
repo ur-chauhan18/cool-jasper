@@ -50,6 +50,12 @@ body {
   color: rgb(77, 178, 196);
   overflow-x: hidden;
 }
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* 🌈 ANIMATED BACKGROUND */
 .app {
