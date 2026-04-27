@@ -227,3 +227,27 @@ body {
   grid-column: 1/-1;
   color: white;
 }
+/* ===== FORCE CENTER FIX ===== */
+
+/* header fix */
+.header {
+  position: relative !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+
+/* center title */
+.wave {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  margin: 0 !important;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* make sure search stays right */
+.search-wrap {
+  margin-left: auto;
+}
