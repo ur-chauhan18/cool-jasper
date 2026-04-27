@@ -9,6 +9,11 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read          # Required to check out the code
+  pages: write             # Required to deploy to Pages
+  id-token: write          # Required for authentication
+
 jobs:
   build:
 
@@ -29,9 +34,8 @@ jobs:
     - run: pnpm install
     - run: pnpm run build
 
-    - name: Commit dist folder
-      uses: stefanzweifel/git-auto-commit-action@v5
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        commit_message: "Auto-update build artifacts"
-        file_pattern: 'dist/*'  # Only tracks changes in the dist folder
+        folder: dist # The folder the action should deploy.
 
