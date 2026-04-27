@@ -49,7 +49,7 @@ body {
   letter-spacing: 2px;
 
   background: linear-gradient(90deg, #ff416c, #ff4b2b, #f8cd0f);
-  /* -webkit-background-clip: text; */
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   animation: glow 1s ease-in-out infinite alternate,
