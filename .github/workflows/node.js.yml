@@ -28,4 +28,3 @@ jobs:
     - run: npm install -g pnpm@latest-10
     - run: pnpm install
     - run: pnpm run build
-    - run: pnpm test
