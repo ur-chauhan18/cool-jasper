@@ -28,3 +28,10 @@ jobs:
     - run: npm install -g pnpm@latest-10
     - run: pnpm install
     - run: pnpm run build
+
+    - name: Commit dist folder
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "Auto-update build artifacts"
+        file_pattern: 'dist/*'  # Only tracks changes in the dist folder
+
