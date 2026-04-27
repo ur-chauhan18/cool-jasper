@@ -1,15 +1,27 @@
 import React, { useState } from "react";
+
 import "./App.css";
 
 const animeData = [
   { title: "Naruto", image: "./naruto.jpg" },
-  { title: "Attack on Titan", image: "./aot.jpg" },
-  { title: "Demon Slayer", image: "./Demon.jpg" },
+  {
+    title: "Attack on Titan",
+    image: "./aot.jpg",
+  },
+  {
+    title: "Demon Slayer",
+    image: "./Demon.jpg",
+  },
   { title: "One Piece", image: "./one.jpg" },
-  { title: "Jujutsu Kaisen", image: "./jjk.jpg" },
+  {
+    title: "Jujutsu Kaisen",
+    image: "./jjk.jpg",
+  },
   { title: "Bleach", image: "./Bleach.jpg" },
+
   { title: "Class Room Of The Elite", image: "./Ayano.jpg" },
-  { title: "Solo Leveling", image: "./Solo.jpg" },
+  
+  { title: "Solo Leveling", image: "./Solo.jpg"},
 ];
 
 export default function App() {
@@ -21,21 +33,13 @@ export default function App() {
 
   return (
     <div className="app">
-      
-      {/* HEADER */}
       <header className="header">
-        
-        {/* Empty left for balance */}
-        <div></div>
-
-        {/* CENTER TITLE */}
-        <h1 className="logo">
+        <h1 className="wave">
           {"Anime World".split("").map((char, i) => (
             <span key={i}>{char}</span>
           ))}
         </h1>
 
-        {/* RIGHT SEARCH */}
         <div className="search-wrap">
           <input
             type="text"
@@ -48,7 +52,6 @@ export default function App() {
         </div>
       </header>
 
-      {/* GRID */}
       <div className="anime-grid">
         {filteredAnime.length > 0 ? (
           filteredAnime.map((anime, index) => (
@@ -65,7 +68,6 @@ export default function App() {
           <p className="no-result">No anime found 😢</p>
         )}
       </div>
-
     </div>
   );
 }
