@@ -22,6 +22,7 @@ const animeData = [
   { title: "Class Room Of The Elite", image: "./Ayano.jpg" },
 
   { title: "Solo Leveling", image: "./Solo.jpg" },
+
   { title: "Death Note", image: "./death.jpg" },
 ];
 
