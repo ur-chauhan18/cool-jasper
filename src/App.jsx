@@ -20,8 +20,6 @@ const animeData = [
   { title: "Bleach", image: "./Bleach.jpg" },
 
   { title: "Class Room Of The Elite", image: "./Ayano.jpg" },
-  
-  { title: "Solo Leveling", image: "./Solo.jpg"},
 ];
 
 export default function App() {
